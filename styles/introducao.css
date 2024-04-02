@@ -16,13 +16,13 @@
 }
 
 .introducao h1::before {
-  content: '';
+  content: "";
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../img/decorate.svg');
+  background: url("../img/decorate.svg") no-repeat center;
   position: absolute;
-  top: -20px;
+  top: -15px;
   left: -40px;
   z-index: -1;
 }
@@ -32,15 +32,16 @@
   color: #525252;
 }
 
-@media (max-width: 1000px){
-  .introducao h1{
+@media (max-width: 1000px) {
+  .introducao h1 {
     font-size: 3rem;
   }
 }
+
 @media (max-width: 800px) {
   .introducao {
     grid-template-columns: 1fr 1fr;
-    gap: 40;
+    gap: 40px;
   }
   .introducao h1 {
     font-size: 2rem;
@@ -51,6 +52,7 @@
     left: 0px;
   }
 }
+
 @media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;

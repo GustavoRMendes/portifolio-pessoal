@@ -1,5 +1,5 @@
 .formacao {
-  background-color: #141414;
+  background: #141414;
   color: #ffffff;
 }
 
@@ -14,17 +14,18 @@
 }
 
 .formacao-container::after {
-  content: '';
+  content: "";
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../img/decorate.svg') no-repeat center;
+  background: url("../img/decorate.svg") no-repeat center;
   position: absolute;
   bottom: -50px;
   left: 20px;
 }
+
 .formacao .subtitulo {
-  color: #000;
+  color: #000000;
   max-width: 5ch;
 }
 
@@ -49,7 +50,7 @@
 
 .faculdade {
   flex: 1;
-  background-color: #000;
+  background: #000000;
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -57,7 +58,7 @@
 }
 
 .faculdade-tipo {
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   color: #a3a3a3;
   margin-bottom: 10px;
@@ -70,6 +71,7 @@
   margin-bottom: 40px;
   position: relative;
 }
+
 .faculdade-curso::before {
   content: "";
   display: block;
@@ -98,9 +100,9 @@
   position: relative;
 }
 
-.formacao-extra h3::before{
+.formacao-extra h3::before {
   display: block;
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   position: absolute;
@@ -109,10 +111,11 @@
 }
 
 .cursos h3::before {
-  background: url('../img/cursos1.svg') no-repeat center center;
+  background: url("../img/cursos1.svg") no-repeat center center;
 }
+
 .idiomas h3::before {
-  background: url('../img/idiomas.svg') no-repeat center center;
+  background: url("../img/idiomas.svg") no-repeat center center;
 }
 
 .formacao-extra li {
@@ -130,7 +133,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
